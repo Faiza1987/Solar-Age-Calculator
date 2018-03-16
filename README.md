@@ -14,11 +14,11 @@ A web app, built with Javascript and Webpack, that determines a user's age and l
 #### Specifications
 
 * Program should allow the user to enter their birth date.
-* Program should allow the user to see their birth date on Mercury.
-* Program should allow the user to see their birth date on Venus.
-* Program should allow the user to see their birth date on Mars.
-* Program should allow the user to see their birth date on Jupiter.
-* Program should allow the user to see how much time they have left to    live on each planet.
+* Program should allow the user to see their age on Mercury.
+* Program should allow the user to see their age on Venus.
+* Program should allow the user to see their age on Mars.
+* Program should allow the user to see their age on Jupiter.
+* Program should allow the user to see how much time they have left to live on Mercury, Venus, Mars, and Jupiter based on their gender and whether or not they have a chronic disease.
 
 
 
