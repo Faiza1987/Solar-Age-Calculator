@@ -1,7 +1,24 @@
 export class SpaceAge {
-  constructor(dob, region) {
+  constructor(dob, chronicDisease, gender) {
     this.dob = dob;
-    this.region = region;
+    this.chronicDisease = chronicDisease;
+    this.gender = gender;
+
+    const idealLifeExpectancy = 87; // on Earth
+
+    //Life Expectancy on Earth -> Universal healthcare for all (Earth and other planets!)
+    if(gender === "Female" && chronicDisease === "Yes"){
+      this.lifeExpectancy = idealLifeExpectancy * .90; //reduce life expectancy by 10%
+    
+    } else if (gender === "Male" && chronicDisease === "Yes"){
+      this.lifeExpectancy = idealLifeExpectancy * .95 * .90; //reduce life expectancy by 10%
+    
+    } else if (gender === "Male" && chronicDisease === "No"){
+      this.lifeExpectancy = idealLifeExpectancy * .95; //because women live longer than men
+    
+    }  else {
+      this.lifeExpectancy = idealLifeExpectancy;
+    }
   }
 
   //Age on Earth in years
@@ -44,5 +61,23 @@ export class SpaceAge {
     return jovianAge;
   }
 
-//Life Expectancy on other planets
+  lifeExpectancyMercury() {
+    let mercurianLifeExpectancy = Math.floor(this.lifeExpectancy/0.24);
+    return mercurianLifeExpectancy;
+  }
+
+  lifeExpectancyVenus() {
+    let venusianLifeExpectancy = Math.floor(this.lifeExpectancy/0.62);
+    return venusianLifeExpectancy;
+  }
+
+  lifeExpectancyMars() {
+    let martianLifeExpectancy = Math.floor(this.lifeExpectancy/1.88);
+    return martianLifeExpectancy;
+  }
+
+  lifeExpectancyJupiter() {
+    let jovianLifeExpectancy = Math.floor(this.lifeExpectancy/11.86);
+    return jovianLifeExpectancy;
+  }
 }
