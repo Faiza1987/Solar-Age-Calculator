@@ -61,21 +61,25 @@ export class SpaceAge {
     return jovianAge;
   }
 
+  //Life expectancy on Mercury
   lifeExpectancyMercury() {
     let mercurianLifeExpectancy = Math.floor(this.lifeExpectancy/0.24);
     return mercurianLifeExpectancy;
   }
 
+  //Life expectancy on Mercury
   lifeExpectancyVenus() {
     let venusianLifeExpectancy = Math.floor(this.lifeExpectancy/0.62);
     return venusianLifeExpectancy;
   }
 
+  //Life expectancy on Mercury
   lifeExpectancyMars() {
     let martianLifeExpectancy = Math.floor(this.lifeExpectancy/1.88);
     return martianLifeExpectancy;
   }
 
+  //Life expectancy on Mercury
   lifeExpectancyJupiter() {
     let jovianLifeExpectancy = Math.floor(this.lifeExpectancy/11.86);
     return jovianLifeExpectancy;
