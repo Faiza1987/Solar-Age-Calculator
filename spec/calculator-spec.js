@@ -85,4 +85,9 @@ describe('SpaceAge', function(){
     var calculate = new SpaceAge("1987-04-08", "No", "Male");
     expect(calculate.lifeExpectancyJupiter()).toEqual(6);
   });
+
+  it('should check if the user is already over lifespan expectation', function() {
+    var calculate = new SpaceAge("1987-04-08", "No", "Male");
+    expect(calculate.immortal(468,250)).toEqual("Gee Golly Whiz Batman! Is he a vampire?!");
+  });
 });

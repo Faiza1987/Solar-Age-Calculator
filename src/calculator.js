@@ -84,4 +84,10 @@ export class SpaceAge {
     let jovianLifeExpectancy = Math.floor(this.lifeExpectancy/11.86);
     return jovianLifeExpectancy;
   }
+
+  immortal(calcAge, lifespan) {
+    if (calcAge > lifespan) {
+      return "Gee Golly Whiz Batman! Is he a vampire?!";
+    }
+  }
 }
