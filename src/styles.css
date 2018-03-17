@@ -1,0 +1,10 @@
+body{
+    background-image: url("./../img/pic1.jpg"); 
+}
+
+.jumbotron {
+    background-image: url("./../img/pic2.jpg");
+    min-height: 300px !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

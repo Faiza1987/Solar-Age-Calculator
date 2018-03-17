@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Super Galactic Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="jumbotron"><center>What is your Solar Age?!</center></h1>
+      <h4><center>Do you want to know how old you are on Mercury, Venus, Mars, and Jupiter?</center></h4> 
+    <h4><center>Fill in the form below and find out!</center></h4>
+      <br>
+      <hr>
+      <form id="user-info">
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <p>Select your gender:</p>
+        <select class="form-control" id="gender">
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+        <p>Do you have a chronic disease?</p>
+        <select class="form-control" id="disease">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+      <br>
+      <br>
+      <div class="result">
+        <div class="space-age">
+          <h1>Your actual age and expected lifespan on the different planets:</h1>
+          <h3>Mercury: </h3>
+          <ul>
+            <li>age: <span id="mercury-age"></span></li>
+            <li>expected lifespan: <span id="mercury-lifespan"></span> years</li>
+          </ul>
+          <h3>Venus: </h3>
+          <ul>
+            <li>age: <span id="venus-age"></span></li>
+            <li>expected lifespan: <span id="venus-lifespan"></span> years</li>
+          </ul>
+          <h3>Mars: </h3>
+          <ul>
+            <li>age: <span id="mars-age"></span></li>
+            <li>expected lifespan: <span id="mars-lifespan"></span> years</li>
+          </ul>
+          <h3>Jupiter: </h3>
+          <ul>
+            <li>age: <span id="jupiter-age"></span></li>
+            <li>expected lifespan: <span id="jupiter-lifespan"></span> years</li>
+          </ul>
+        </div>
+        <div class="immortal-message">
+          <h1 id="message"></h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
